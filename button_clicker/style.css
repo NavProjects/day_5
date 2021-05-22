@@ -1,0 +1,33 @@
+.container{
+    border: 1px solid black;
+    margin: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: flex-start;
+}
+button {
+    padding: 20px;
+    background: #EFEFEF;
+    font-size: 18pt;
+    color: white;
+    margin: 10px;
+}
+p{
+    background-color: white;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 70px;
+}
+#refresh{
+    height: 10px;
+    font-size: 10px;
+    position: relative;
+    top: -92px;
+    left: 0px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+}
