@@ -18,9 +18,17 @@ function sandwichFactory(bread, protein, cheese, toppings) {
 var s1 = sandwichFactory("wheat", "turkey", "provolone", ["mustard", "fried onions", "arugula"]);
 console.log(s1);
 
-
+console.log(Math.random * 4)
 
 function pizzaOven(crustType, sauceType, cheeses, toppings){
+    var crustType = ["deep dish", "hand tossed", "stuffed crust", "thin crust"]
+    crustType = crustType[Math.floor(crustType.length * Math.random())];
+    var sauceType = ["traditional", "marinara", "Pesto", "Garlic Ranch Sauce"]
+    sauceType = sauceType[Math.floor(sauceType.length * Math.random())];
+    var cheeses = ["Gorgonzola","mozzarella","feta","Parmigiano"]
+    cheeses = cheeses[Math.floor(cheeses.length * Math.random())];
+    var toppings = ["pepperoni, sausage","mushrooms, olives, onions","pinapples,ham","bacon"]
+    toppings = toppings[Math.floor(toppings.length * Math.random())];
     var pizza = {}
     pizza.crustType = crustType;
     pizza.sauceType = sauceType;
@@ -28,6 +36,8 @@ function pizzaOven(crustType, sauceType, cheeses, toppings){
     pizza.toppings = toppings;
     return pizza;
 }
+var rp1 = pizzaOven()
+console.log(rp1)
 
 var p1 = pizzaOven("deep dish", "traditional", ["mozzarella"], ["pepperoni", "sausage"])
 console.log(p1)
