@@ -1,9 +1,9 @@
 function playVid (element){
-    element.play()
+    element.play();
 }
 
 function pauseVid (element){
-    element.pause()
-    element.currentTime = 0
+    element.pause();
+    element.currentTime = 0;
 }
 
